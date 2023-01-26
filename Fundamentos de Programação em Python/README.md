@@ -4,4 +4,4 @@
 
 ## Índice
 
-1. [Introdução aos algoritmos](https://github.com/elvinmatheus/universidade/tree/main/fundamentos_de_programacao_em_Python)
+1. [Introdução aos Algoritmos](https://github.com/elvinmatheus/universidade/tree/main/fundamentos_de_programacao_em_Python)
