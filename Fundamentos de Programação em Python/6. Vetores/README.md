@@ -13,9 +13,9 @@ DECLARE nome[tamanho] tipo
 ```
 
 onde:
-	`nome` da variável do tipo vetor;
-	`tamanho` é a quantidade de variáveis que vão compor o vetor;
-	`tipo` é o tipo básico dos dados que serão armazenados ao vetor.
+- `nome` é o nome da variável do tipo vetor;
+- `tamanho` é a quantidade de variáveis que vão compor o vetor;
+- `tipo` é o tipo básico dos dados que serão armazenados ao vetor.
 
 Exemplo:
 
