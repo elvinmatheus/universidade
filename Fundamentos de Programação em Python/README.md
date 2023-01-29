@@ -10,4 +10,5 @@
 4. [Estrutura Condicional](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o%20em%20Python/4.%20Estrutura%20Condicional)
 5. [Estrutura de Repetição](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o%20em%20Python/5.%20Estrutura%20de%20Repeti%C3%A7%C3%A3o)
 6. [Vetores](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o%20em%20Python/6.%20Vetores)
+7. [Matrizes](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o%20em%20Python/7.%20Matrizes)
 
