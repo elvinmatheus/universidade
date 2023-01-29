@@ -111,3 +111,7 @@ def matriz (linhas, colunas, valorInicial):
 
 mat = matriz(3, 2, 0.0)
 ```
+
+# Referências Bibliográficas
+- ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores: algoritmos, PASCAL, C/C++ (padrão ANSI) e JAVA. 3. ed. São Paulo: Pearson Education do Brasil, 2012.
+- PIVA, D. [et al]. Algoritmos e programação de computadores. Rio de Janeiro: Elsevier,2012.
