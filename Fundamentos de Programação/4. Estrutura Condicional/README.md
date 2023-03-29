@@ -114,5 +114,20 @@ if 0 < x and x < 10:
 	print("x é um número positivo de apenas um dígito.")
 ```
 
-# REFERÊNCIAS BIBLIOGRÁFICAS
+# [Trabalho Prático 2](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/4.%20Estrutura%20Condicional/Trabalho%20Pr%C3%A1tico%202)
+
+1. 1035 - Selection Test 1
+2. 1036 - Bhaskara's Formula
+3. 1037 - Interval
+4. 1038 - Snack
+5. 1040 - Average 3
+6. 1041 - Coordinates of a Point
+7. 1042 - Simple Sort
+8. 1043 - Triangle
+9. 1044 - Multiples
+10. 1045 - Triangle Types
+11. 1046 - Game Time
+12. 1047 - Game Time with Minutes
+
+# Referencias Bibliográficas
 - DOWNEY, A. Think Python: How to Think Like a Computer Scientist.
