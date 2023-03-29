@@ -1,0 +1,216 @@
+Início
+	escreva "entre o primeiro número:";
+	leia a;
+	escreva "entre o segundo número:";
+	leia b;
+	escreva "entre o terceiro número:";
+	leia c;
+	
+	se (a > b e b > c) ou (b > a e a > c), então:
+		escreva "entre o quarto número:";
+		leia c;
+		
+		se (c > a e a > b) ou (a > c  e c > b), então:
+			escreva "entre o quinto número:";
+			leia b;
+			se (c > a) e (b > a ou b > c), então:
+				escreva "entre o sexto número:";
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+		se (c > b e b > a) ou (b > c e c > a), então:
+			escreva "entre o quinto número:";
+			leia a;
+			se (c > b) e (a > b ou a > c), então:
+				escreva "entre o sexto número:";
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+		se c < a e c < b, então:
+			escreva "entre o quinto número:";
+			leia c;
+			se (c > a e a > b) ou (a > c  e c > b), então:
+				escreva "entre o sexto número:";
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			se (c > b e b > a) ou (b > c e c > a), então:
+				escreva "entre o sexto número:";
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			se c < a e c < b, então: 
+				escreva "entre o sexto número:";
+				leia c;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+	se (b > c e c > a) ou (c > b e b > a), então:
+		escreva "entre o quarto número:";
+		leia a;
+		se (c > a e a > b) ou (a > c  e c > b), então:
+			escreva "entre o quinto número:";
+			leia b;
+			se (c > a) e (b > a ou b > c), então:
+				escreva "entre o sexto número:";
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+		se (a > b e b > c) ou (a > b e b > c), então:
+			escreva "entre o quinto número:";
+			leia c;
+			se (c > b) e (a > b ou a > c), então:
+				escreva "entre o sexto número:";
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+		se a < b e a < c, então:
+			escreva "entre o quinto número:";
+			leia a;
+			se (c > a e a > b) ou (a > c  e c > b), então:
+				escreva "entre o sexto número:";
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+	se (a > c e c > c) ou (c > a e a > b), então:
+		escreva "entre o quarto número:";
+		leia b;
+		se (b > a e a > c) ou (a > b  e b > c), então:
+			escreva "entre o quinto número:";
+			leia c;
+			se (c > a) e (b > a ou b > c), então:
+				escreva "entre o sexto número:";
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+		se (b > c e c > a) ou (c > b e b > a), então:
+			escreva "entre o quinto número:";
+			leia a;
+			se (c > b) e (a > b ou a > c), então:
+				escreva "entre o sexto número:";
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+					
+		se b < a e b < c, então:
+			escreva "entre o quinto número:";
+			leia b;
+			se (c > a e a > b) ou (a > c  e c > b), então:
+				escreva "entre o sexto número:";
+				leia b;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;
+			senão:
+				leia a;
+				se (c > a e a > b) ou (c > b e b > a), então:
+					escreva "o maior número é" + c;
+				se (a > b e b > c) ou (a > c e c > b), então:
+					escreva "o maior número é" + a;
+				se (b > a e a > c) ou (b > c e c > a), então:
+					escreva "o maior número é" + b;

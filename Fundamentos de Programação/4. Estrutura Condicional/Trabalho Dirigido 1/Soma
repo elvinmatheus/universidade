@@ -1,0 +1,23 @@
+Algoritmo Soma;
+Variáveis:
+	a, b, c: numéricos
+
+Início
+	escreva "entre o primeiro número";
+	leia a;
+	escreva "entre o segundo número";
+	leia b;
+	escreva "entre o terceiro número";
+	leia c;
+	
+	Se a = b + c, então:
+		escreva a + "é a soma de " + b "+" + c;
+	Senão: 
+		se b = a + c, então:
+			escreva b + "é a soma de " + a "+" + c;
+		senão:
+			se c = a + b
+				escreva c + "é a soma de " + a "+" + b;
+			senão:
+				escreva "Nenhum valor é igual à soma dos outros dois."
+Fim	

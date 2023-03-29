@@ -1,0 +1,22 @@
+Algoritmo aposentadoria;
+Variáveis:
+	codigo, nascimento, ingresso: númerico;
+Início
+	escreva "entre o código do empregado:";
+	leia código;
+	escreva "entre o ano de nascimento do empregado:";
+	leia nascimento;
+	escreva "entre o ano de ingresso do empregado:";
+	leia ingresso;
+	idade <- 2020 - nascimento;
+	tempo_de_serviço <- 2020 - ingressso;
+	
+	Se idade >= 65 ou tempo_de_serviço >= 30 ou (idade >= 60 e tempo_de_serviço >= 25), então:
+		escreva idade;
+		escreva tempo_de_serviço;
+		escreva "Requerer aposentadoria";
+	Senão:
+		escreva idade;
+		escreva tempo_de_serviço;
+		escreva "Não requerer";
+Fim

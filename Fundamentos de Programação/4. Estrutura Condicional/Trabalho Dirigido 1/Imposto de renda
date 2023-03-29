@@ -1,0 +1,21 @@
+Algoritmo Imposto de Renda;
+Variáveis:
+	valor_bruto: numérico;
+	
+Início
+	se valor_bruto <= 1903.98, então:
+		escreva "Isento.";
+	senão:
+		se 1903.99 <= valor_bruto <= 2826.65, então:
+			IR <- (0.89) * valor_bruto * 0.075;
+			escreva "O valor a ser pago de imposto de renda é " + IR + "reais";
+		se 2826.66 <= valor_bruto <= 3751.05, então:
+			IR <- (0.89) * valor_bruto * 0.15;
+			escreva "O valor a ser pago de imposto de renda é " + IR + "reais";
+		se 3751.06 <= valor_bruto <= 4664.68, então:
+			IR <- (0.89) * valor_bruto * 0.225;
+			escreva "O valor a ser pago de imposto de renda é " + IR + "reais";
+		se valor_bruto >= 4664.69, então:
+			IR <- (0.89) * valor_bruto * 0.275;
+			escreva "O valor a ser pago de imposto de renda é " + IR + "reais";
+Fim

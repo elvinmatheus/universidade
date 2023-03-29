@@ -1,0 +1,23 @@
+Algoritmo FPM;
+Variáveis:
+	pib, rpc, hab, tam: numéricos;
+	mun: cadeia;
+Início
+	escreva "Digite o valor do PIB em reais:";
+	leia pib;
+	escreva "Digite o nome do município:";
+	leia mun;
+	escreva "Digite a renda per capita desse município em reais:";
+	leia rpc;
+	escreva "Digite o número de habitantes desse município:";
+	leia hab;
+	escreva "Digite o tamanho territorial desse município em km²:";
+	leia tam;
+	FPM <- pib * 0,005
+	
+	Se rpc < 2000 e (hab <= 20000 ou tam < 100000), então:
+		escreva "O município " + mun + "terá direito a " + FPM + "reais do fundo de participação dos municípios (FPM)."
+	Senão:
+		escreva "O município " + mun + " não tem direito ao fundo de participação dos municípios (FPM);
+
+Fim

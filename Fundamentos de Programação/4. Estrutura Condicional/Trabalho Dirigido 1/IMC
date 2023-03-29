@@ -1,0 +1,25 @@
+Algoritmo IMC;
+
+Variáveis:
+    p, a, IMC: numéricos;
+
+Início
+
+    escreva "Entre com a medida do peso em kilogramas:";
+    leia p;
+    escreva "Entre com a medida da altura:";
+    leia a;
+    IMC <- p / (a * a)
+    
+    Se IMC < 20, então:
+        escreva "Abaixo do peso";
+    Se 20 <= IMC < 25, então:
+        escreva "Peso Normal";
+    Se 25 <= IMC < 30, então:
+        escreva "Sobrepeso";
+    Se 30 <= IMC < 40, então:
+        escreva "Obeso";
+    Se IMC >= 40, então:
+        escreva "Obeso Mórbido";
+        
+Fim

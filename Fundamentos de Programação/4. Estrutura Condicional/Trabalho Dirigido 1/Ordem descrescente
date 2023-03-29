@@ -1,0 +1,42 @@
+Algoritmo Ordem Decrescente;
+Variáveis:
+    a, b, c: numéricos;
+Início
+    escreva "entre o primeiro número";
+    leia a;
+    escreva "entre o segundo número";
+    leia b;
+    escreva "entre o terceiro número";
+    leia c;
+    
+    se a > b e a > c, então:
+        maior = a;
+        se b > c, então:
+            meio = b;
+            menor = c;
+        senão:
+            meio = c;
+            menor = b;
+            
+    se b > a e b > c, então:
+        maior = b;
+        se a > c, então:
+            meio = a;
+            menor = c;
+        senão:
+            meio = c;
+            menor = a;
+            
+    se c > a e c > b, então:
+        maior = c;
+        se a > b, então:
+            meio = a;
+            menor = b;
+        senão:
+            meio = b;
+            menor = a;
+    
+    escreva maior;
+    escreva meio;
+    escreva menor;
+Fim

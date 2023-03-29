@@ -1,0 +1,25 @@
+Algoritmo Data;
+Variáveis:
+    d, m, a: numéricos;
+Início
+    escreva "Entre com o dia:";
+    leia d;
+    escreva "Entre com o mês:";
+    leia m;
+    escreva "Entre com o ano:";
+    leia ano;
+    
+    Se m = 2, então:
+        se d <= 28, então:
+            	escreva "Data válida.";
+        senão:
+            	escreva "Data inválida.";
+    Senão:
+	se (m <= 7 e m mod 2 = 1) ou (m > 7 e m mod 2 = 0), então:
+		escreva "Data válida.";
+        senão:
+            	se d <= 30, então:
+            		escreva "Data válida."
+            	senão:
+            		escreva "Data inválida."
+Fim

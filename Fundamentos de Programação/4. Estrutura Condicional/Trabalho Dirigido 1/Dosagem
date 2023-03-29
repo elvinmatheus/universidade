@@ -1,0 +1,28 @@
+Algoritmo Dosagem;
+Variáveis:
+   i, p: numéricos;
+   
+Início
+   escreva "Entre com a idade do paciente:";
+   leia i;
+   escreva "Entre com o peso do paciente em kilogramas:";
+   leia p;
+   
+   Se i > 12, então:
+       Se p > 60, então:
+          dose = 1000 * 20 / 500;
+       Senão:
+          dose = 875 * 20 / 500;
+   Senão:
+       Se 5 <= p <= 9, então:
+           dose = 125 * 20 / 500;
+       Se 9,1 <= p <= 16, então:
+           dose = 250 * 20 / 500;
+       Se 16,1 <= p <= 24, então:
+           dose = 375 * 20 / 500;
+       Se 24,1 <= p <= 30, então:
+           dose = 500 * 20 / 500;
+       Se p > 30, então:
+           dose = 750 * 20 / 500;
+    escreva "O paciente deve tomar " + dose + "gotas";
+Fim

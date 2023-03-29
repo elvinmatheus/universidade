@@ -1,0 +1,12 @@
+Algoritmo ano bissexto;
+	Variáveis:
+	ano: numérico;
+
+Início
+	escreva: "entre o ano para saber se ele é bissexto:";
+	leia ano;
+	Se (ano mod 4 = 0 e ano mod 100 != 0) ou ano mod 400 = 0;
+		escrever ano + "é bissexto.";
+	Senão:
+		escrever ano + "não é bissexto.";
+Fim
