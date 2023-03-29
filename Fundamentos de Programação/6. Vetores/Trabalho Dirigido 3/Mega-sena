@@ -1,0 +1,31 @@
+Algoritmo Mega-sena;
+Variáveis:
+	N, i, j, qtde: numérico;
+	v: vetor [6] de numérico;
+	u: vetor [10] de numérico;
+	acerto: vetor [6] de numérico;
+	
+início
+	qtde <- 0
+	para i <- 0 até 9, faça:
+		escreva "Entre com um número jogado: ";
+		leia u[i];
+	para i <- 0 até 5, faça:
+		escreva "Entre um número sorteado na Mega Sena: ";
+		leia v[i];
+		para j <- 0 até 9, faça:
+			se v[i] = u[j], então:
+				qtde <- qtde + 1
+				acerto[i] <- v[i]
+	para i <- 0 até 5, faça:
+		escreva acerto[i];
+	escreva qtde;
+	se qtde = 4, então:
+		escreva Quadra;
+	se qtde = 5, então:
+		escreva Quina;
+	se qtde = 6, então:
+		escreva Mega-Sena;
+Fim
+		
+		

@@ -1,0 +1,18 @@
+Algoritmo decimal-binário
+Variáveis:
+	i, j, q, n, r: numérico;
+	v: vetor [15] de numérico;
+	
+Início
+	i <- 0
+	enquanto n > 0, faça:
+		r <- n mod 2;
+		v[i] <- r
+		i <- i + 1
+		q <- 0
+		enquanto (n - (2 * q)) >= 2:
+			q <- q + 1;
+		n <- q;
+	para j <- 0 até i, faça:
+		escreva v[i];
+Fim

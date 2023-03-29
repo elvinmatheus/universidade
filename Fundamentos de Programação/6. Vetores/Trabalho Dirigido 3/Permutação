@@ -1,0 +1,54 @@
+Algoritmo permutação
+Variáveis:
+	a, b, r, q, i, j, tam, cont: numérico;
+	v: vetor [10] de numérico;
+	u: vetor [10] de numérico;
+	
+Início
+	escreva "entre um valor inteiro: ";
+	leia a;
+	escreva "entre outro valor inteiro: ";
+	leia b;
+	
+	i <- 0
+	enquanto a >= 10, faça:
+		r <- a mod 10;
+		v[i] <- r
+		i <- i + 1
+		q <- 0
+		enquanto (a - (10 * q)) >= 10, faça:
+			q <- q + 1;
+		a <- q;
+	v[i] <- q
+	
+	j <- 0
+	enquanto b >= 10, faça:
+		r <- b mod 10;
+		u[j] <- r
+		j <- j + 1
+		q <- 0
+		enquanto (b - (10 * q)) >= 10, faça:
+			q <- q + 1;
+		b <- q;
+	u[j] <- q
+	
+	se i > j, então:
+		escreva "a não é permutação de b";
+	senão:
+		
+		tam <- i
+		j <- 0
+		cont <- 0
+		
+		enquanto i > 0 , faça:
+			se v[i] = u[j], então:
+				cont <- cont + 1;
+		i <- i - 1
+		j <- j + 1
+	
+	se cont = tam, faça:
+		escreva "a é permutação de b";
+	senão:
+		escreva "a não é permutação de b";
+Fim
+	

@@ -1,0 +1,27 @@
+Algoritmo números negativos
+Variáveis:
+	n, qtde, i, j, k: numérico
+	v: vetor [100000] de numérico;
+
+Início
+	j <- 0
+	k <- 0
+	qtde <- 0
+	
+	para j < 100000, faça:
+		escreva "entre um valor numérico: ";
+		leia n;
+		se n >= 0, então:
+			v[j] <- n
+			j <- j + 1
+	escreva "entre um valor numérico: ";
+	leia n;
+	se n < 0, então:
+		v[j] <- n
+	para i <- 0 até j, faça:
+		escreva v[i];
+		para k <- 0 até j, faça:
+			se v[i] = v[k], então:
+				qtde <- qtde + 1
+		escreva qtde;
+fim

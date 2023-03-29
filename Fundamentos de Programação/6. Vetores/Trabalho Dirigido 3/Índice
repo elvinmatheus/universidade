@@ -1,0 +1,16 @@
+Algoritmo tabela
+Variáveis:
+	i: numérico;
+	v: vetor [9] de numérico;
+	
+Início
+	para i <- 1 até 9, faça:
+		escreva "entre um valor inteiro: ";
+		leia n;
+		v[i] <- n
+	escreva "entre um valor inteiro para o índice: "
+	leia a;
+	enquanto a > 0. faça:
+		escreva v[a];
+		n <- v[a];
+Fim

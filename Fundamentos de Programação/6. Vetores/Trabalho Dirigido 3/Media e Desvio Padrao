@@ -1,0 +1,23 @@
+Algoritmo media e desvio padrao
+Variaveis:
+	i, n, media, dp: numérico;
+	v: vetor [50] de numérico;
+
+início
+	media <- 0
+	i <- 0
+	dp <- 1
+	enquanto i < 50, faça:
+		escreva "entre um número inteiro: ";
+		leia n;
+		se n mod 2 != 0;
+			v[i] <- n;
+			media <- media + v[i];
+			i <- i + 1;
+	media <- media / 50;
+	para i <- 0 até 49, faça:
+		dp <- dp * (v[i] - media)^2;
+	dp <- raiz(dp / (49));
+	escreva "a média é ", media;
+	escreva "o desvio padrão é ", dp;
+fim
