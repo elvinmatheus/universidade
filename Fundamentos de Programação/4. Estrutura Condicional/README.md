@@ -129,5 +129,9 @@ if 0 < x and x < 10:
 11. 1046 - Game Time
 12. 1047 - Game Time with Minutes
 
+# [Trabalho Dirigido 1](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/4.%20Estrutura%20Condicional/Trabalho%20Dirigido%201)
+
+Questões propostas pelo professor (infelizmente não encontrei o pdf com as orientações para cada questão)
+
 # Referencias Bibliográficas
 - DOWNEY, A. Think Python: How to Think Like a Computer Scientist.
