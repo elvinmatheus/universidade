@@ -97,6 +97,24 @@ v[8] = 3.14
 # Em Python, é possível que "vetor" armazene tipos distintos
 ```
 
+# [Trabalho Prático 5](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/6.%20Vetores/Trabalho%20Pr%C3%A1tico%205)
+
+Questões retiradas do URI (atualmente beecrowd)
+
+1. 1080 - highest and position
+2. 1134 - type of fuel
+3. 1174 - array selection I
+4. 1175 - array change I
+5. 1176 - fibonacci array
+6. 1177 - array fill II
+7. 1178 - array fill III
+8. 1179 - array fill IV (não encontrei nos meus documentos)
+9. 1180 - lowest number and position
+
+# [Trabalho Dirigido 3](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/6.%20Vetores/Trabalho%20Dirigido%203)
+
+Questões elaboradas pelo professor
+
 # Referências Bibliográficas
 - ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores: algoritmos, PASCAL, C/C++ (padrão ANSI) e JAVA. 3. ed. São Paulo: Pearson Education do Brasil, 2012.
 - DOWNEY, A. Think Python: How to Think Like a Computer Scientist.
