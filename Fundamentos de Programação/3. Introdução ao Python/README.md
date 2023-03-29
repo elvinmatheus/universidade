@@ -139,19 +139,19 @@ Instruções são executadas linearmente na ordem em que foram escritas:
 	- da esquerda para direita.
 Em Python, cada instrução ocupa uma linha.
 
-# [Trabalho Prático 1]()
+# [Trabalho Prático 1](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/3.%20Introdu%C3%A7%C3%A3o%20ao%20Python/Trabalho%20Pr%C3%A1tico%201)
 
 Questões tiradas do URI (Atualmente BeeCrowd)
 
-1 - 1001 - Extremely Basic
-2 - 1002 - Area of a Circle
-3 - 1005 - Average 1
-4 - 1006 - Average 2
-5 - 1011 - Sphere
-6 - 1013 - The Greatest
-7 - 1014 - Consuption
-8 - 1015 - Distance between two points
-9 - 1017 - Fuel Spent
+1. 1001 - Extremely Basic
+2. 1002 - Area of a Circle
+3. 1005 - Average 1
+4. 1006 - Average 2
+5. 1011 - Sphere
+6. 1013 - The Greatest
+7. 1014 - Consuption
+8. 1015 - Distance between two points
+9. 1017 - Fuel Spent
 
 # Referencias Bibliográficas
 
