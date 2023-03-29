@@ -171,6 +171,25 @@ while True:
 
 O código irá rodar pelo menos uma vez, perguntando pela entrada do usuário.
 
+# [Trabalho Dirigido 2](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/5.%20Estrutura%20de%20Repeti%C3%A7%C3%A3o/Trabalho%20Dirigido%202)
+
+Questões elaboradas pelo professor
+
+# [Trabalho Prático 4](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/5.%20Estrutura%20de%20Repeti%C3%A7%C3%A3o/Trabalho%20Pr%C3%A1tico%204)
+
+Questões retiradas do URI (atualmente beecrowd)
+
+1. 1059 - even numbers
+2. 1060 - positive numbers
+3. 1074 - even or odd
+4. 1079 - weighted averages 
+5. 1080 - highest and position
+6. 1094 - experiments
+7. 1095 - sequence IJ 1
+8. 1096 - sequence IJ 2
+9. 1099 - sum of consecutive odd numbers II
+10. 1144 - logical sequence
+
 # Referência Bibliográfica
 - ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores: algoritmos, PASCAL, C/C++ (padrão ANSI) e JAVA. 3. ed. São Paulo: Pearson Education do Brasil, 2012.
 - DOWNEY, A. Think Python: How to Think Like a Computer Scientist.
