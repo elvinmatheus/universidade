@@ -133,5 +133,15 @@ if 0 < x and x < 10:
 
 Questões propostas pelo professor (infelizmente não encontrei o pdf com as orientações para cada questão)
 
+# [Trabalho Prático 3](https://github.com/elvinmatheus/universidade/tree/main/Fundamentos%20de%20Programa%C3%A7%C3%A3o/4.%20Estrutura%20Condicional/Trabalho%20Pr%C3%A1tico%203)
+
+1. 1018 - banknotes
+2. 1020 - age in days
+3. 1048 - salary increase
+4. 1049 - animal
+5. 1050 - DDD
+6. 1051 - taxes
+7. 1061 - event time
+8. 1064 - positives and average
 # Referencias Bibliográficas
 - DOWNEY, A. Think Python: How to Think Like a Computer Scientist.
