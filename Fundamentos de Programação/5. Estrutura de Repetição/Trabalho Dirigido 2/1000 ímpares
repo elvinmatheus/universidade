@@ -1,0 +1,18 @@
+2. Faça um algoritmo que exiba os 1.000 primeiros números inteiros positivos que são ı́mpares e que não são divisı́veis nem por 3 nem por 7.
+
+Algoritmo 1000 ímpares não múltiplos de 3 e 7;
+Variáveis:
+	i n: numérico
+	
+Início
+	i <- 4
+	para n <- 1 até 1000 faça:
+		i <- i + 1
+		se i mod 2 != 0 e i mod 3 != 0 e i mod 7 != 0, então:
+			escreva i;
+			n <- n + 1;
+Fim
+						
+		
+	
+		

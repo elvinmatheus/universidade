@@ -1,0 +1,19 @@
+6. Faça um algoritmo que receba um número inteiro positivo N ≥ 2 e mostre a sequência Fibonacci dos N primeiros elementos. Considere que os dois primeiros elementos são 0 e 1.
+
+Algoritmo Termos Fibonacci
+Variáveis:
+	a, b, c, x, N: numérico;
+
+Início
+	escreva "Entre com um valor inteiro positivo maior ou igual a 2:"
+	leia N;
+	a <- 0;
+	b <- 1;
+	escreva a;
+	escreva b;
+	para x <- 3 até N, faça:
+		c = a + b;
+		a = b; 
+		b = c;
+		escreva c;
+Fim	

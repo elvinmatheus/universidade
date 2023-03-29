@@ -1,0 +1,14 @@
+3. Faça um algoritmo que receba um número inteiro positivo N , calcule e mostre o valor de N ! = 1 × 2 × ... × N.
+
+Algoritmo fatorial;
+variáveis:
+	N, x: numérico;
+	
+Início
+	escreva "Digite um número inteiro positivo para calcular o fatorial deste número";
+	leia N;
+	f <- N;
+	para x <- 1 até N - 1, faça:
+		f = f * (N - x)
+	escreva "O fatorial de" + N "! é" + f"
+Fim

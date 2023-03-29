@@ -1,0 +1,32 @@
+Faça um algoritmo que receba um número inteiro positivo qualquer, calcule e mostre o seu número "invertido". Exemplo: O número "invertido" de 28463 é 36482. Utilizar apenas valores numéricos.
+Algoritmo Número inverso
+Variáveis:
+	n, q, r, invertido, cont: numérico
+
+Início
+	escreva "Digite um número inteiro positivo para calcular a sua forma invertida";
+	leia n;
+	cont <- 1;
+	i <- 1
+	q <- n
+	r <- n
+	invertido <- 0
+	
+	enquanto q >= 10, faça:
+		enquanto i * 10 <= q:
+			i = i + 1
+		q = i - 1;
+		i <- 1
+		cont = cont + 1
+	
+	q <- n
+	enquanto cont >= 0, faça	
+		enquanto q - i * 10 > 9, faça:
+			i = i + 1;
+			r = q - i * 10;
+		q <- r
+		invertido = invertido + q * 10 ^ (cont - 1)
+		cont <- -1	
+				
+	escreva "o número 'invertido' de" + n "é" + invertido
+Fim

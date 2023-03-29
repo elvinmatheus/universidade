@@ -1,0 +1,17 @@
+7. Faça um algoritmo que receba um número inteiro positivo N e mostre a sequência Fibonacci com todos os elementos da sequência menores do que N.
+
+Algoritmo Fibonacci
+Variáveis:
+	N, a, b, c: numérico;
+	
+Início
+	escreva "Digite um valor inteiro positivo N:"
+	leia N;
+	a <- 0;
+	b <- 1;
+	enquanto c < N, faça:
+		c = a + b;
+		b = c;
+		a = b;
+		escreva c;
+Fim

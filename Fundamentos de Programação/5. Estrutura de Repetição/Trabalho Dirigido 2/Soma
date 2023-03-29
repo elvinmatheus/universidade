@@ -1,0 +1,14 @@
+1. Faça um algoritmo que receba um número inteiro positivo N , calcule e mostre a soma de todos os números no intervalo [1; N].
+
+algoritmo soma dos N termos;
+variáveis:
+	N, x, s: numérico;
+
+Início
+	escreva "Digite um valor inteiro positivo N para calcular a soma de todos os números no intervalo [1; N];
+	leia N;
+	s <- N
+	para x <- 1 até N - 1, faça:
+		s = s + (N - x)
+	escreva  "A soma dos N termos do intervalo [1; N] é: " + s;
+Fim	         

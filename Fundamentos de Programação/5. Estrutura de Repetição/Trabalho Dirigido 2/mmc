@@ -1,0 +1,30 @@
+4. Faça um algoritmo que receba dois números inteiros positivos, calcule e mostre o Mı́nimo Múltiplo Comum (MMC) entre os dois números.
+
+Algoritmos MMC;
+Variáveis:
+	a, b, r, mmc, mdc: numérico;
+	
+Início
+	escreva "Entre o primeiro valor inteiro:";
+	leia a;
+	escreva "Entre o segundo valor inteiro:";
+	leia b;
+	
+	se a > b, então:
+		enquanto b != 0, faça:
+			r = a mod b;
+			a = b;
+			b = r;
+		mdc = a;
+	senão:
+		enquanto a != 0, faça:
+			r = b mod a;
+			b = a;
+			a = r;
+		mdc = b;
+	mmc = a * b / mdc
+	escreva "O mmc entre " + a "e " + b "é " + mmc;
+Fim
+	
+			
+			

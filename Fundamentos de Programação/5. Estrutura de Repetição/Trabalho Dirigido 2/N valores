@@ -1,0 +1,42 @@
+8. Faça um algoritmo que receba um número inteiro positivo N . Em seguida, o algoritmo deverá receber N números quaisquer, e mostrar o maior, o menor e a média dos números entrados.
+
+Algoritmo Média;
+Variáveis:
+	N, a, novo, x, maior, menor, media, s, soma: numérico;
+	
+Início
+	escreva "Digite um valor inteiro positivo N para o número de entradas:"
+	leia N;
+	escreva "Entre um número qualquer:"
+	leia a
+	maior = a 
+	menor = a 
+	media = a
+	Se N = 1, então
+		maior = a 
+		menor = a 
+		media = a
+	Senão:
+		Início
+			para x <- 2 até N, faça:
+				maior;
+				menor;
+				escreva "Entre outro número qualquer:"
+				leia novo;
+				Se novo > maior, então:
+					menor = maior;
+					maior = novo;
+				Se novo < menor, então:
+					maior = menor;
+					menor = novo;
+				se x = 2, então:
+					s = a + novo;
+					soma = s;
+				para x > 2, faça:
+					soma = soma + novo;
+			media = soma / N;
+		Fim
+	escreva menor;
+	escreva maior;
+	escreva media;
+Fim	

@@ -1,0 +1,14 @@
+5. Faça um algoritmo que receba um número inteiro positivo N , calcule a expressão seguinte considerando os N primeiros elementos da série:
+
+Algoritmo sequência;
+variáveis:
+	x, N, s: numérico
+	
+Início
+	escreva "Digite um valor inteiro positivo:";
+	leia N;
+	s <- 0
+	para x <- 1 até N, faça;
+		s = s + (2 * x - 1) / x
+	escreva s
+Fim
