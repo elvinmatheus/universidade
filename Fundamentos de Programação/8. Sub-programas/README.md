@@ -74,6 +74,28 @@ def maximo(a, b):
 print(maximo(7,2))
 ```
 
+# Trabalho Prático 8
+
+Questões retiradas do URI/beecrowd. Não encontrei as minhas soluções. Refazer
+
+1. 1929 - triangle
+2. 1105 - sub-prime
+3. 1541 - building houses
+4. 1087 - queen
+5. 1930 - electrical outlet
+6. 2059 - odd, even or cheating
+7. 1847 - welcome to the winter!
+
+# Trabalho Prático 9
+
+Questões retiradas do URI/beecrowd. Não encontrei as minhas soluções. Refazer
+
+1. 1959 - regular simple polygons
+2. 1961 - jumping frog
+3. 2028 - sequence of sequence
+4. 2483 - merry christmaaas!
+5. 2727 - secret code
+
 # Referências Bibliográficas
 
 - ASCENCIO, A. F. G. CAMPOS, E. A. V. Fundamentos da programação de computadores: algoritmos, PASCAL C/C++ (padrão ANSI) e JAVA. 3. ed. São Paulo: Pearson Education do Brasil, 2012.
