@@ -10,7 +10,7 @@ A qualquer momento durante o seu processamento, uma Máquina de Turing deve esta
 
 O processamento de uma Máquina de Turing consiste em uma sequencia de passos executada pela unidade de controle da máquina. Cada passo consiste em observar o símboo da célula corrente da fita, escrever um símbolo na célula, provavelmente movendo o cabeçote de leitura e gravação para célula a esquera ou a direita, e em seguida mudar de estado. A ação exata a ser executada é determinada por um programa que comunica a unidade de controle o que deve ser feito, com base no estado da máquina e no conteúdo da célula corrente.
 
-0**Exemplo:** Calculadora que incrementa uma unidade em um valor binário inserido na Máquina de Turing e separado por *.
+**Exemplo:** Calculadora que incrementa uma unidade em um valor binário inserido na Máquina de Turing e separado por *.
 
 ## Exercícios
 
