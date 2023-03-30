@@ -121,9 +121,9 @@ mat = matriz(3, 2, 0.0)
 5. 1185 - above the secundary diagonal
 6. 1186 - below the secundary diagonal
 7. 1190 - right area
-8. 1435 - square matrix I
-9. 1478 - square matrix II
-10. 1557 - square matrix III
+8. 1435 - square matrix I (não fiz)
+9. 1478 - square matrix II (não fiz)
+10. 1557 - square matrix III (não fiz)
 
 # Referências Bibliográficas
 
