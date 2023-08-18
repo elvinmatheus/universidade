@@ -233,3 +233,190 @@ end
 ```
 
 Em vez de fazer uma adição H1+H2, essa versão faz {op H1 H2}
+
+**Variações no triângulo de Pascal**
+
+Para obter o triângulo de Pascal original, fazemos:
+
+```oz
+fun {Add X Y} X+Y end
+```
+
+Agora podemos fazer `{GenericPascal Add 5}` para retornar a quinta linha do triângulo de Pascal.
+
+Podemos fazer também `{GenericPascal Number.'+' 5}`, uma vez que a operação de adição '+' é parte do módulo `Number`.
+
+Definindo outra função:
+
+```oz
+fun {Xor X Y} if X==Y then 0 else 1 end end
+
+{Browse {GenericPascal Xor N}}
+```
+
+## Concorrência
+
+A concorrência é a capacidade do programa realizar várias tarefas de forma independente.
+
+Nós introduzimos a concorrência criando threads. Threads são criadas com a instrução `thread`.
+
+```oz
+thread P in
+    P={Pascal 30}
+    {Browse P}
+end
+{Browse 99*99}
+```
+Isso cria uma nova thread. Dentro da nova thread, nós chamamos {Pascal 30} e depois chamamos `Browse` para mostrar o resultado. Enquanto a nova thread está executando os cálculos, o sistema prossegue e mostra o resultado de 99*99.
+
+## Dataflow
+
+```oz
+declare X in
+thread {Delay 10000} X=99 end
+{Browse start} {Browse X*X}
+```
+
+A multiplicação X*X espera até que X esteja ligado. O primeiro `Browse` mostra "start". O segundo `Browse` espera pela multicação, então não faz nada ainda. O {Delay 10000} faz o sistema esperar 10 segundos. X é ligado é conectado depois que o delay terminar. Quando X é ligada, então a multiplicação continua e o segundo browse mostra 9801.
+
+```oz
+declare X in
+thread {Browse start} {Browse X*X} end
+{Delay 10000} X=99
+```
+
+O trecho de código acima se comporta exatamente como o código anterior.
+
+## Estado
+
+Memória é necessária para funções que mudam seu comportamento e aprendem com seu passado. Esse tipo de memória é chamada *estado explícito* .
+
+**A memory cell**
+
+Há várias formas de definir estado explícito. A maneira mais simples é definir uma única célula de memória. A célula é um tipo de caixa na qual você pode colocar qualquer conteúdo dentro dela. Muitas linguagens de programação chamam isso de "variável". Nós chamamos isso de `célula` para evitar confusão com as variáveis definidas anteriormente, que possuem uma noção parecida com as variáveis matemáticas, isto é, atalhos para valores. Há três funções para células: `NewCell` cria uma nova célula, `:=` (atribuição) coloca um novo valor em uma célula, e `@` (access) obtém o atual valor armazenado na célula.
+
+```oz
+declare
+C={NewCell 0}
+C:=@C+1
+{Browse @C}
+```
+
+Isso cria uma célula C com conteúdo inicial 0, adiciona um ao conteúdo, e então a mostra.
+
+## Objetos
+
+Funções com memória interna são normalmente chamadas `objetos`.
+
+```oz
+declare
+local C in
+    C={NewCell 0}
+    fun {Bump}
+        C:=@C+1
+        @C
+    end
+    fun {Read}
+        @C
+    end
+end
+```
+
+A célula é referenciada por uma variável local, então ela é completamente invisível do lado de fora. Essa propriedade é chamada de `encapsulamento`.
+
+```oz
+{Browse {Bump}}
+{Browse {Bump}}
+
+{Browse {Read}}
+```
+
+## Classes
+
+```oz
+declare
+fun {NewCounter}
+C Bump Read in
+    C={NewCell 0}
+    fun {Bump}
+        C:=@C+1
+        @C
+    end
+    fun {Read}
+        @C
+    end
+    counter(bump:Bump read:Read)
+end
+```
+
+`NewCounter` é uma função que cria uma nova célula e retorna novas funções Bump e Read. Retornar funções como resultado de funções é outra forma de programação de alta ordem.
+
+Nós agrupamos Bump e Read juntos em uma estrutura de dados composta chamada registro. O registro counter(bump:Bump read:Read) é caracterizado por seu rótulo *counter* e por seus dois campos chamado bump e read.
+
+```oz
+declare
+Ctr1={NewCounter}
+Ctr2={NewCounter}
+
+
+{Browse {Ctr1.bump}}
+```
+
+Cada contador tem sua própria memória interna e suas próprias funções Bump e Read. Nós podemos acessar essas funções usando o operador "." (dot).
+
+**Em direção à programação orientada a objetos**
+
+Operações definidas dentro de classes são normalmente chamadas *métodos*. A classe pode ser usada para fazer muitos outros objetos counters. Todos esses objetos compartilham os mesmos métodos, mas cada um tem sua própria memória interna separada. Programação com classes e objetos são chamadas *object-based programming*.
+
+Adicionar o conceido de herança à *object-based programming* nos dá *object-based programming*. Herança significa que uma nova classe pode ser definida em termos de classes existentes, especificando como a nova classe é diferente da classe herdada.
+
+## Nondeterminism and time
+
+```oz
+declare
+C={NewCell 0}
+thread
+    C:=1
+end
+thread
+    C:=2
+end
+```
+O exemplo acima é um exemplo simpes de nondeterminism.
+
+```oz
+declare
+C={NewCell 0}
+thread I in
+    I=@C
+    C:=I+1
+end
+thread J in
+    J=@C
+    C:=J+1
+end
+```
+
+## Atomicidade
+
+Para resolver o problema de sobreposição de resultados usamos operações atômicas. 
+
+```oz
+declare
+C={NewCell 0}
+L={NewLock}
+thread
+    lock L then I in
+        I=@C
+        C:=I+1
+    end
+end
+thread
+    lock L then J in
+        J=@C
+        C:=J+1
+    end
+end
+```
+
+Um *lock* tem a propriedade de apenas uma única thread execute os seus comandos por vez. Se a segunda thread tenta entrar, então esperará até que a primeira termine.
